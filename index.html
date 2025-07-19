@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Urban Cafe</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">The Urban Cafe</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#menu">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a> <!-- Add section if needed -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footer">Contact</a> <!-- Add section if needed -->
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="text-center bg-dark text-white p-4">
+        <h1>The Urban Cafe</h1>
+        <p><b><u>Your cheat day just found its soulmate.</u></b></p>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero text-center text-white d-flex align-items-center justify-content-center"
+        style="background: url('images/hero.jpg') no-repeat center center/cover; height: 300px;">
+        <div>
+            <h2>Welcome to Our Menu</h2>
+            <p>Choose your favorites from our categories</p>
+            <a href="#menu" class="btn btn-warning mt-3">Browse Menu</a>
+        </div>
+    </section>
+
+    <section id="bg">
+        <!-- Category Buttons -->
+        <section class="text-center my-4" id="menu">
+            <h2>Filter by Category</h2>
+            <div class="btn-group my-3">
+                <button class="btn btn-outline-success filter-btn" data-category="all">All</button>
+                <button class="btn btn-outline-success filter-btn" data-category="appetizer">Appetizers</button>
+                <button class="btn btn-outline-success filter-btn" data-category="main">Main Courses</button>
+                <button class="btn btn-outline-success filter-btn" data-category="dessert">Desserts</button>
+                <button class="btn btn-outline-success filter-btn" data-category="beverage">Beverages</button>
+
+            </div>
+        </section>
+
+        <!-- Menu Items -->
+        <div class="container" id="menu-items">
+            <div class="row">
+
+                <!-- Appetizer -->
+                <div class="col-md-4 mb-4 menu-item" data-category="appetizer">
+                    <div class="card">
+                        <img src="images/springroll.jpg" class="card-img-top" alt="Spring Rolls">
+                        <div class="card-body">
+                            <h5 class="card-title">Spring Rolls</h5>
+                            <p class="card-text">Crispy veggie spring rolls.</p>
+                            <p class="text-success fw-bold">₹150</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Course -->
+                <div class="col-md-4 mb-4 menu-item" data-category="main">
+                    <div class="card">
+                        <img src="images/cheeseBurger.jpg" class="card-img-top" alt="Burger">
+                        <div class="card-body">
+                            <h5 class="card-title">Cheese Burger</h5>
+                            <p class="card-text">Juicy burger with melted cheese.</p>
+                            <p class="text-success fw-bold">₹180</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dessert -->
+                <div class="col-md-4 mb-4 menu-item" data-category="dessert">
+                    <div class="card">
+                        <img src="images/iceCream.jpg" class="card-img-top" alt="Ice Cream">
+                        <div class="card-body">
+                            <h5 class="card-title">Chocolate Ice Cream</h5>
+                            <p class="card-text">Rich and creamy chocolate delight.</p>
+                            <p class="text-success fw-bold">₹120</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Beverage -->
+                <div class="col-md-4 mb-4 menu-item" data-category="beverage">
+                    <div class="card">
+                        <img src="images/orangeJuice.jpg" class="card-img-top" alt="Juice">
+                        <div class="card-body">
+                            <h5 class="card-title">Orange Juice</h5>
+                            <p class="card-text">Freshly squeezed and chilled.</p>
+                            <p class="text-success fw-bold">₹600</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4" id="footer">
+        <div class="container">
+            <div class="row text-center text-md-start">
+
+                <div class="col-md-6 mb-3">
+                    <h5>Contact Us</h5>
+                    <p><strong>The Urban Cafe</strong></p>
+                    <p>Vadodara, Gujarat</p>
+                    <p>Email: urbancafe@yahhoo.in</p>
+                    <p>Phone: +91 1234567890</p>
+                </div>
+
+
+                <div class="col-md-6">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+                        <li><a href="about.html" class="text-white text-decoration-none">About Us</a></li>
+                        <li><a href="#menu" class="text-white text-decoration-none">Menu</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+    <!-- Bootstrap JS  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
